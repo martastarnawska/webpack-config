@@ -29,7 +29,17 @@ module.exports = {
               {
                 test: /\.scss$/,
                 use:['style-loader', MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader']
-              }
+              },
+              {
+                test: /\.(png|jpe?g|svg)$/,
+                loader: 'file-loader',
+                include: path.resolve(__dirname, 'src/assets'),
+                options: {
+                  name: '[hash].[ext]',
+                  outputPath: 'img/',
+                  publicPath: 'img/',
+                }
+              },
         ],
     },
     plugins: [

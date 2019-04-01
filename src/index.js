@@ -1,4 +1,4 @@
-import myDefault from './script';
-myDefault();
+// import myDefault from './script';
+// myDefault();
 
-import './main.scss';
+import './scss/main.scss';

@@ -1,0 +1,23 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    color: $footer-text;
+
+    &__email {
+        color: $footer-mail;
+    }
+
+    &__media {
+        display: flex;
+    }
+
+    &__list {
+        display: flex;
+        padding-left: 10px;
+        color: $footer-icon;
+    }
+    &__link {
+        padding-left: 10px;
+    }
+}

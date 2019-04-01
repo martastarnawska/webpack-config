@@ -1,0 +1,16 @@
+.container {
+    margin: 50px 50px 0 50px;;
+    font-family: $font-main;
+
+    &__wrapper {
+        padding: 100px;
+        background-color: $background-blue;
+    }
+
+    &__grid {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 300px 300px 300px;
+        grid-gap: 70px 80px;
+    }
+}
